@@ -1,0 +1,8 @@
+- name: demo on parallism
+  hosts: nginx
+  become: yes
+  tasks: 
+  - name: intall the nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
