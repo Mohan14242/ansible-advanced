@@ -1,0 +1,6 @@
+- name: understand the facts
+  hosts: awslinux
+  tasks:
+  - name: getting the facts
+    ansible.builtin.debug:
+      msg: "all the facts are {{ansible_facts}}"
