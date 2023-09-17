@@ -1,5 +1,5 @@
 - name: this is for testing the tags
-  hosts: mo
+  hosts: localhost
   become: yes
   tasks:
   - name: printing the name mohan

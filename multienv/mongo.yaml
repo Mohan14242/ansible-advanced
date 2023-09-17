@@ -1,5 +1,5 @@
 - name: this for inatlling the nginx
-  hosts: mongodb
+  hosts: m
   become: yes
   tasks:
   - name: isntalling the nginx
