@@ -1,0 +1,27 @@
+- name: this is for testing the tags
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: printing the name mohan
+    tags: 
+    - mohan
+    ansible.builtin.debug:
+      msg: "this is the mohan"
+  - name: mohan age 
+    tags:
+    - mohan
+    ansible.builtin.debug:
+      msg: "my age is 24"
+  - name: printing the chiru details
+    tags:
+    - chiru
+    ansible.builtin.debug:
+      msg: "this is thechiru"
+  - name: chiru age
+    tags:
+    - chiru
+    ansible.builtin.debug:
+      msg: "chiru age is 25"
+
+    
+
