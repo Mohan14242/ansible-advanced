@@ -1,0 +1,7 @@
+- name: installing themongodb
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: printing the variable according to the server
+    ansible.builtin.debug:
+      msg: "the variable is {{name}}"
